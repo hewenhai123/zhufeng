@@ -33,7 +33,15 @@
 JS前端课程按照时间分类->
 
 第二周一:从“第1讲:以面向对象的思想深入理解DOM-2015年第一期”--->"第8讲：求平均分示例和eval-2015年第一期" (五个视频)
-
+        以面向对象的思想深入理解DOM-2015年
+        元素集合NodeList的特点
+       实现基本的表格排序3
+       call和apply方法4
+       异常处理和自定义异常5
+      逻辑运算6
+      表格排序7
+      求平均分示例和eval-8
+ 
 第二周一:"JSON基础知识专题第一讲"和"JSON基础知识专题2"
 
 第二周专题:http://www.zhufengpeixun.com/viewer.do?courseId=859485#currentPlaying=1351238
@@ -41,3 +49,21 @@ JS前端课程按照时间分类->
 第二周专题:http://www.zhufengpeixun.com/kecheng/detail_859484
 
 第二周二:"2014年JavaScript正则表达式：第一讲正则是干什么的？" -->"2014年JavaScript正则表达式：exec方法的面试题实例"(9个)  正则的教材一定要看
+         regExp1-序
+        regExp1-正则的定义
+         regExp3-元字符2
+         regExp3-元字符1
+        regExp4-replace方法
+       regExp4-格式化代码的综合实例
+      test方法和split方法等1
+  exec和math-2
+exec方法的面试题实例3
+
+
+     
+        
+        
+
+
+
+

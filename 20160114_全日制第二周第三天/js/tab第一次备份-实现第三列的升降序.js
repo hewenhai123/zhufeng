@@ -11,7 +11,7 @@ function bindData() {
     for (var i = 0; i < jsonAry.length; i++) {
 
         //事先进行数据的初始化处理
-        var cur = jsonAry[i];
+        var cur = jsonAry[i];                      
         cur.sex = cur.sex === 0 ? "男" : "女";
 
         //每一次循环都创建一个新的tr(创建一行)

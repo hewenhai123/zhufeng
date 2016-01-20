@@ -1,3 +1,4 @@
+
 var utils = {
     listToArray: function (likeAry) {
         var ary = [];
@@ -34,12 +35,12 @@ utils.getCss = function (curEle, attr) {
 
 utils.offset = function (curEle) {
     var t = curEle.offsetTop, l = curEle.offsetLeft, p = curEle.offsetParent;
-    while (p) {
-        if (navigator.userAgent.indexOf("MSIE 8.0") === -1) {
+    while (p) { //1
+        if (navigator.userAgent.indexOf("MSIE 8.0") === -1) {//3
             t += p.clientTop;
             l += p.clientLeft;
         }
-        t += p.offsetTop;
+       //2 t += p.offsetTop;
         l += p.offsetLeft;
         p = p.offsetParent;
     }

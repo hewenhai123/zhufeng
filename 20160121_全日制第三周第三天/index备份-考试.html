@@ -127,6 +127,7 @@
     function init() {
         for (var i = 0; i < imgList.length; i++) {
             //->闭包的作用,防止异步编程导致只加载的是最后一张的图片,我们形成一个私有的作用域把用到的每一个索引都保护起来
+            console.log(i);
             ~function (i) {
                 var curImg = imgList[i];
                 //->如果当前图片已经加载过了就不在重复加载了

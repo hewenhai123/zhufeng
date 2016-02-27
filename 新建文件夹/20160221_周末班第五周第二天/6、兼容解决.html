@@ -95,12 +95,16 @@
         n++;
         console.log(12);
         if (n >= 3) {
-            off(box, "click", fn12);
+            off(box, "click", fn1);
+            off(box, "click", fn2);
+            off(box, "click", fn3);
+            off(box, "click", fn4);
+          //  unbind(box, "click", fn11);
         }
     }
-
+  //  on(box, "mouseover", fn1);
     on(box, "click", fn1);
-    off(box, "click", fn1);
+    on(box, "click", fn1);
     on(box, "click", fn2);
     on(box, "click", fn3);
     on(box, "click", fn4);
@@ -115,6 +119,24 @@
     on(box, "click", fn12);
     on(box, "click", fn12);
     on(box, "click", fn12);
+
+//
+//    bind(box, "click", fn1);
+//    bind(box, "click", fn1);
+//    bind(box, "click", fn2);
+//    bind(box, "click", fn3);
+//    bind(box, "click", fn4);
+//    bind(box, "click", fn5);
+//    bind(box, "click", fn6);
+//    bind(box, "click", fn7);
+//    bind(box, "click", fn8);
+//    bind(box, "click", fn9);
+//    bind(box, "click", fn10);
+//    bind(box, "click", fn11);
+//    bind(box, "click", fn12);
+//    bind(box, "click", fn12);
+//    bind(box, "click", fn12);
+//    bind(box, "click", fn12);
 </script>
 </body>
 </html>

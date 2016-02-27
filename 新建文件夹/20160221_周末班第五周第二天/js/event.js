@@ -11,12 +11,13 @@ function bind(curEle, evenType, evenFn) {
         return;
     }
 
+
     //->给evenFn化妆,并且把化妆前的照片贴在自己对应的脑门上
     var tempFn = function () {
         evenFn.call(curEle);
     };
     tempFn.photo = evenFn;
-
+    //console.log(tempFn)
     //->首先判断该自定义属性之前是否存在,不存在话创建一个,由于要存储多个方法化妆后的结果,所以我们让其值是一个数组
     if (!curEle["myBind" + evenType]) {
         curEle["myBind" + evenType] = [];
@@ -26,10 +27,13 @@ function bind(curEle, evenType, evenFn) {
     for (var i = 0; i < ary.length; i++) {
         var cur = ary[i];
         if (cur.photo === evenFn) {
+            console.log(cur.photo === evenFn)
             return;
         }
     }
     ary.push(tempFn);
+
+
     curEle.attachEvent("on" + evenType, tempFn);
 }
 
@@ -68,6 +72,7 @@ function on(curEle, evenType, evenFn) {
     ary.push(evenFn);
 
     //curEle.addEventListener(evenType, run, false);//->执行on的时候,我们给当前元素绑定了一个点击的行为,当点击的时候执行run方法:run方法中的this是当前元素curEle,并且浏览器给run传递了一个MouseEvent事件对象
+
     bind(curEle, evenType, run);
 }
 
@@ -85,7 +90,9 @@ function off(curEle, evenType, evenFn) {
 
 //->run:我们只给当前元素的点击行为绑定一个方法run,当触发点击的时候执行的是run方法,我在run方法中根据自己存储的方法顺序分别的在把这些方法执行
 function run(e) {
+
     e = e || window.event;
+
     var flag = e.target ? true : false;//->IE6~8下不兼容e.target,得到的flag为false
     if (!flag) {
         e.target = e.srcElement;

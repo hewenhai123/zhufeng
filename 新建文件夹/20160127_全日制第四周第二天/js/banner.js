@@ -97,7 +97,7 @@
             step = 1;
             inner.style.left = 0;
         }
-        animate(inner, {left: -step * 1000}, 500);
+        animate(inner, {left: -step * 1000}, 500,4);
         selectTip();
     }
 
